@@ -19,7 +19,8 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'image',
-				'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49'
+				'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49',
+				'previewImageUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
