@@ -18,11 +18,9 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			$messages = [
-				'type' => 'text',
-				'text' => $text
+				'type' => 'image',
+				'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49'
 			];
-
-			//$data = ['imageFile' => 'http://siberiantimes.com/upload/information_system_52/1/8/4/item_1849/information_items_1849.jpg']
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
