@@ -18,7 +18,10 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			if(strpos($text, 'แมว') == true){
-				$data = ['imageFile' => '@http://siberiantimes.com/upload/information_system_52/1/8/4/item_1849/information_items_1849.jpg',]
+				$data = [
+					'text' = 'นี่ไงแมว',
+					'imageFile' => 'http://siberiantimes.com/upload/information_system_52/1/8/4/item_1849/information_items_1849.jpg',
+				]
 
 			}
 
