@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 				'text' => $text
 			];
 
-			$data = ['imageFile' => 'http://siberiantimes.com/upload/information_system_52/1/8/4/item_1849/information_items_1849.jpg']
+			//$data = ['imageFile' => 'http://siberiantimes.com/upload/information_system_52/1/8/4/item_1849/information_items_1849.jpg']
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
