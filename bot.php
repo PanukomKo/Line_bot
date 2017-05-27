@@ -17,11 +17,20 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			$messages = [
-				'type' => 'image',
-				'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49',
-				'previewImageUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49'
-			];
+			if(stripos($text, 'hosico') != false || stripos($text, 'Hosico') != false || stripos($text, 'โฮสิโกะ') != false || stripos($text, 'โฮสิโก้') != false){
+				$messages = [
+					'type' => 'image',
+					'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49',
+					'previewImageUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/15391041_223407271401277_8915066001398988487_n.jpg?oh=76244c40efc6933ef2e4b7421357b270&oe=59E88E49'
+				];
+			}
+			if(stripos($text, 'nala') != false || stripos($text, 'Nala') != false || stripos($text, 'นาลา') != false){
+				$messages = [
+					'type' => 'image',
+					'originalContentUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/18342716_1359791850778970_7634890570901158731_n.jpg?oh=824182918f0103f0775d692ab7daca8a&oe=59A6763E',
+					'previewImageUrl' => 'https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.0-9/18342716_1359791850778970_7634890570901158731_n.jpg?oh=824182918f0103f0775d692ab7daca8a&oe=59A6763E'
+				];
+			}
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
