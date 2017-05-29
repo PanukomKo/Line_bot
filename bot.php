@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
    
-			if(strpos($text, 'hosico') !== false){
+			/*if(strpos($text, 'hosico') !== false){
 				$messages = [
 					'type' => 'imagemap',
 					"baseUrl" => "https://imgza.xyz/i/ow65i9zb.jpg",
@@ -50,13 +50,48 @@ if (!is_null($events['events'])) {
 	      				]
   					]
 				];
-			}
-			else if(strpos($text, 'คลิป') !== false){
+			}*/
+			if(strpos($text, 'hosico') !== false){
 				$messages = [
-					"type" => "video",
-    				"originalContentUrl" => "https://www.facebook.com/thehosicocat/videos/273666003042070/",
-    				"previewImageUrl" => "https://www.facebook.com/thehosicocat/videos/273666003042070/"
-				];
+				  "type" => "template",
+				  "altText" => "this is a buttons template",
+				  "template" => [
+				      "type" => "buttons",
+				      "thumbnailImageUrl" => "https://imgza.xyz/i/ow65i9zb.jpg",
+				      "title" => "โหสิโก้",
+				      "text" => "แบบนี้ป่ะ คอลอสเสล",
+				      "actions" => [
+					          [
+					            "type" => "uri",
+					            "label" => "มาดู Hosico",
+					            "uri" => "https://www.facebook.com/thehosicocat/videos/273666003042070/"
+					          ]
+				        ]
+				    ]
+				]
+			}
+
+			if(strpos($text, 'ใช่มะ') !== false){
+				$messages = [
+				  "type" => "template",
+				  "altText" => "this is a confirm template",
+				  "template" => [
+				      "type" => "confirm",
+				      "text" => "ตอบสิ",
+				      "actions": [
+				          [
+				            "type" => "message",
+				            "label" => "Yes",
+				            "text" => "เออดี"
+				          ],
+				          [
+				            "type" => "message",
+				            "label" => "No",
+				            "text" => "กำ แล้วมันคือไรอ่า"
+				          ]
+				      ]
+				   ]
+				]
 			}
 
 			// Make a POST Request to Messaging API to reply to sender
