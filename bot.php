@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			if(strpos($text, 'hosico') !== false){
 				$messages = [
 					'type' => 'imagemap',
-					"baseUrl" => "https://scontent.fbkk2-1.fna.fbcdn.net/v/t31.0-8/18320826_272813646460639_3269795860273210556_o.jpg?oh=558c30fe59ec7a1a8f45ced872eb4fff&oe=59A2A1D1/1040",
+					"baseUrl" => "https://imgza.xyz/i/ow65i9zb",
 					"altText" => "Hosico naja",
 					"baseSize" => [
       					"height" => 1040,
