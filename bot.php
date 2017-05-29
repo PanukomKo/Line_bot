@@ -82,12 +82,12 @@ if (!is_null($events['events'])) {
 				          [
 				            "type" => "message",
 				            "label" => "Yes",
-				            "text" => "เออดี"
+				            "text" => "ใช่"
 				          ],
 				          [
 				            "type" => "message",
 				            "label" => "No",
-				            "text" => "กำ แล้วมันคือไรอ่า"
+				            "text" => "มรั่ย"
 				          ]
 				      ]
 				   ]
