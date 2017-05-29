@@ -24,8 +24,8 @@ if (!is_null($events['events'])) {
 					"baseUrl" => "https://scontent.fbkk2-1.fna.fbcdn.net/v/t31.0-8/18320826_272813646460639_3269795860273210556_o.jpg?oh=558c30fe59ec7a1a8f45ced872eb4fff&oe=59A2A1D1",
 					"altText" => "Hosico naja",
 					"baseSize" => [
-      					"height": 1040,
-      					"width": 1040
+      					"height" => 1040,
+      					"width" => 1040
   					],
   					"actions" => [
 	     				 [
