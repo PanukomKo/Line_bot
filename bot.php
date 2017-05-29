@@ -28,6 +28,16 @@ if (!is_null($events['events'])) {
       					"width" => 1040
   					],
   					"actions" => [
+  						[
+					        "type" => "uri",
+					        "linkUri" => "https://www.facebook.com/thehosicocat/videos/273666003042070/",
+					        "area" => [
+					              "x" => 0,
+					              "y" => 0,
+					              "width" => 520,
+					              "height" => 1040
+					        ]
+					    ],
 	      				[
 	          				"type" => "message",
 	          				"text" => "แบบนี้อ่ะนะ คอลอสเซล",
