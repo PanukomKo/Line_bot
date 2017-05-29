@@ -17,30 +17,45 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-
-			$url = sprintf('http://ajax.googleapis.com/ajax/services/search/images?q=%s&v=1.0&rsz=large&start=1', urlencode($text));
-    		$results = json_decode(file_get_contents($url))->responseData->results;
-    		$image = $results[array_rand($results)];
    
 			if(strpos($text, 'hosico') !== false){
 				$messages = [
-					'type' => 'image',
-					'originalContentUrl' => $image->url,
-					'previewImageUrl' => $image->url
+					'type' => 'imagemap',
+					"baseUrl" => "https://scontent.fbkk2-1.fna.fbcdn.net/v/t31.0-8/18320826_272813646460639_3269795860273210556_o.jpg?oh=558c30fe59ec7a1a8f45ced872eb4fff&oe=59A2A1D1",
+					"altText" => "Hosico naja",
+					"baseSize" => {
+      					"height": 1040,
+      					"width": 1040
+  					},
+  					"actions" => [
+	     				 {
+	          				"type" => "uri",
+	          				"linkUri" => "https://www.facebook.com/thehosicocat/?ref=br_rs",
+	          				"area" => {
+	              				"x" => 0,
+	              				"y" => 0,
+	              				"width" => 520,
+	              				"height" => 1040
+	          				}
+	      				},
+	      				{
+	          				"type" => "message",
+	          				"text" => "แบบนี้อ่ะนะ คอลอสเซล",
+	          				"area" => {
+	              				"x" => 520,
+	              				"y" => 0,
+	              				"width" => 520,
+	              				"height" => 1040
+	          				}
+	      				}
+  					]
 				];
 			}
-			else if(strpos($text, 'nala') !== false){
+			else if(strpos($text, 'คลิป') !== false){
 				$messages = [
-					'type' => 'image',
-					'originalContentUrl' => $image->url,
-					'previewImageUrl' => $image->url
-				];
-			}
-			else{
-				$messages = [
-					'type' => 'image',
-					'originalContentUrl' => $image->url,
-					'previewImageUrl' => $image->url
+					"type" => "video",
+    				"originalContentUrl" => "https://www.facebook.com/thehosicocat/videos/273666003042070/",
+    				"previewImageUrl" => "https://www.facebook.com/thehosicocat/videos/273666003042070/"
 				];
 			}
 
