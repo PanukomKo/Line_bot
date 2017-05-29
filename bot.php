@@ -78,7 +78,7 @@ if (!is_null($events['events'])) {
 				  "template" => [
 				      "type" => "confirm",
 				      "text" => "ตอบสิ",
-				      "actions": [
+				      "actions" => [
 				          [
 				            "type" => "message",
 				            "label" => "Yes",
