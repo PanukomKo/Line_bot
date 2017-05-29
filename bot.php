@@ -21,7 +21,7 @@ if (!is_null($events['events'])) {
 			if(strpos($text, 'hosico') !== false){
 				$messages = [
 					'type' => 'imagemap',
-					"baseUrl" => "https://imgza.xyz/i/ow65i9zb",
+					"baseUrl" => "https://imgza.xyz/i/ow65i9zb.jpg",
 					"altText" => "Hosico naja",
 					"baseSize" => [
       					"height" => 1040,
